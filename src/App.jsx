@@ -4,13 +4,15 @@ import "./index.css";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import PostsAppBar from "./components/PostsAppBar";
 import * as ReactDOM from "react-dom";
+import {LoginForm} from "login_form/LoginForm";
+
 
 const App = () => (
     <BrowserRouter>
         <div>
             <PostsAppBar/>
             <Routes>
-                <Route path={"/login"} element={<div></div>}/>
+                <Route path={"/login"} element={<LoginForm/>}/>
                 <Route path={"/add-post"} element={<div></div>}/>
                 <Route path={"/"} element={<div></div>}/>
             </Routes>
