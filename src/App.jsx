@@ -1,16 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { Counter } from 'login_form/Counter';
 
 import "./index.css";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import PostsAppBar from "./components/PostsAppBar";
+import * as ReactDOM from "react-dom";
 
 const App = () => (
-  <div className="container">
-    <div>Name: container</div>
-    <div>Framework: react</div>
-    <div>Language: JavaScript</div>
-    <div>CSS: Empty CSS</div>
-      <Counter />
-  </div>
+    <BrowserRouter>
+        <div>
+            <PostsAppBar/>
+            <Routes>
+                <Route path={"/login"} element={<div></div>}/>
+                <Route path={"/add-post"} element={<div></div>}/>
+                <Route path={"/"} element={<div></div>}/>
+            </Routes>
+        </div>
+    </BrowserRouter>
 );
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<App/>, document.getElementById("app"));
