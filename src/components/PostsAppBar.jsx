@@ -17,7 +17,7 @@ export default function PostsAppBar() {
                     <Button
                         color="inherit"
                         component={Link}
-                        to={"/login"}
+                        to={"/"}
                     >
                         Login
                     </Button>
@@ -31,7 +31,7 @@ export default function PostsAppBar() {
                     <Button
                         color="inherit"
                         component={Link}
-                        to={"/"}
+                        to={"/posts"}
                     >
                         View posts
                     </Button>

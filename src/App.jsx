@@ -12,9 +12,9 @@ const App = () => (
         <div>
             <PostsAppBar/>
             <Routes>
-                <Route path={"/login"} element={<LoginForm/>}/>
+                <Route path={"/"} element={<LoginForm/>}/>
                 <Route path={"/add-post"} element={<div></div>}/>
-                <Route path={"/"} element={<div></div>}/>
+                <Route path={"/posts"} element={<div></div>}/>
             </Routes>
         </div>
     </BrowserRouter>
